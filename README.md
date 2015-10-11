@@ -3,7 +3,7 @@ A concept build using the MEAN stack, built with MEANJS.org
 
 DotaHouse is meant to be an in-house Dota 2 league where users can join non-ranked games together and play along side and vs other players in their same skill bracket. In-house leagues are created for players who want to take their games slightly more seriously than public matchmaking and want to improve their gameplay mechanics.
 
-Integrated with Steamcommunity OAuth, and because the users MMR is not available as a public call, this tool relied on a user adding a steam chat bot to it's friends, from there the bot could then access the users dota 2 MMR or Match Making Rating. Once the bot retrieved the users MMR they would recieve a steam chat message to be notified that they no longer needed to be friends and the bot would remove the user from the friends list. The MMR is a rating that would determine the users bracket that they could access for in-house match making games.
+Integrated with Steamcommunity OAuth, and because the users MMR is not available as a public call, this tool relied on a user adding a steam chat bot to it's friends, from there the bot could then access the users dota 2 MMR or Match Making Rating. Once the bot retrieved the users MMR they would receive a steam chat message to be notified that they no longer needed to be friends and the bot would remove the user from the friends list. The MMR is a rating that would determine the users bracket that they could access for in-house match making games.
 
 The current status of this application checks if a users MMR has been added, if it has not it alerts the user to request the friendship of the bot.
 
