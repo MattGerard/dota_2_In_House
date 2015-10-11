@@ -1,7 +1,7 @@
 ## DotaHouse
 A concept build using the MEAN stack, built with MEANJS.org
 
-DotaHouse is meant to be an in-house Dota 2 leauge where users can join non-ranked games together and play along side and vs other players in their same skill bracket. In-house leagues are created for players who want to take their games slightly more seriously than public matchmaking and want to improve their gameplay mechanics.
+DotaHouse is meant to be an in-house Dota 2 league where users can join non-ranked games together and play along side and vs other players in their same skill bracket. In-house leagues are created for players who want to take their games slightly more seriously than public matchmaking and want to improve their gameplay mechanics.
 
 Integrated with Steamcommunity OAuth, and because the users MMR is not available as a public call, this tool relied on a user adding a steam chat bot to it's friends, from there the bot could then access the users dota 2 MMR or Match Making Rating. Once the bot retrieved the users MMR they would recieve a steam chat message to be notified that they no longer needed to be friends and the bot would remove the user from the friends list. The MMR is a rating that would determine the users bracket that they could access for in-house match making games.
 
@@ -79,46 +79,6 @@ Your application should run on the 3000 port so in your browser just go to [http
                             
 That's it! your application should be running by now, to proceed with your development check the other sections in this documentation. 
 If you encounter any problem try the Troubleshooting section.
-
-## Development and deployment With Docker
-
-* Install [Docker](http://www.docker.com/)
-* Install [Fig](https://github.com/orchardup/fig)
-
-* Local development and testing with fig: 
-```bash
-$ fig up
-```
-
-* Local development and testing with just Docker:
-```bash
-$ docker build -t mean .
-$ docker run -p 27017:27017 -d --name db mongo
-$ docker run -p 3000:3000 --link db:db_1 mean
-$
-```
-
-* To enable live reload forward 35729 port and mount /app and /public as volumes:
-```bash
-$ docker run -p 3000:3000 -p 35729:35729 -v /Users/mdl/workspace/mean-stack/mean/public:/home/mean/public -v /Users/mdl/workspa/mean-stack/mean/app:/home/mean/app --link db:db_1 mean
-```
-
-## Getting Started With MEAN.JS
-You have your application running but there are a lot of stuff to understand, we recommend you'll go over the [Offical Documentation](http://meanjs.org/docs.html). 
-In the docs we'll try to explain both general concepts of MEAN components and give you some guidelines to help you improve your development procees. We tried covering as many aspects as possible, and will keep update it by your request, you can also help us develop the documentation better by checking out the *gh-pages* branch of this repository.
-
-## Community
-* Use to [Offical Website](http://meanjs.org) to learn about changes and the roadmap.
-* Join #meanjs on freenode.
-* Discuss it in the new [Google Group](https://groups.google.com/d/forum/meanjs)
-* Ping us on [Twitter](http://twitter.com/meanjsorg) and [Facebook](http://facebook.com/meanjs)
-
-## Live Example
-Browse the live MEAN.JS example on [http://meanjs.herokuapp.com](http://meanjs.herokuapp.com).
-
-## Credits
-Inspired by the great work of [Madhusudhan Srinivasa](https://github.com/madhums/)
-The MEAN name was coined by [Valeri Karpov](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and)
 
 ## License
 (The MIT License)
