@@ -9,7 +9,7 @@ The current status of this application checks if a users MMR has been added, if 
 
 After the application has the users MMR the user is placed into a lobby where they can join sub lobbies.
 
-TODO:
+##TODO:
 Once a user enter's a lobby, have them 'ready-up' after all 10 users have entered. Set a time period that a user has to ready-up before they are removed due to being AFK. Once all have been ready for a certain amount of time, a lobby password is generated for the lobby host(highest ranking player), however the code is shown to all.
 
 Once everyone is readied up, and in the game, once the game finishes, players will all report a win or a loss, if there is a dispute, the match will be flagged and players can report a player who reported incorrectly. Have enough reports, your accout will be temp. suspended. Users have "x" number of reports per week.
